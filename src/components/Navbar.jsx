@@ -7,7 +7,7 @@ import { Link, useLocation } from "react-router-dom";
 const navlinks = [
   {
     name: "Dashboard",
-    link: "/home",
+    link: "/",
     logo: <Home className="w-4 h-4" />,
   },
   {
@@ -22,7 +22,6 @@ const navlinks = [
 const Navbar = () => {
   const location = useLocation();
   const { pathname } = location;
-  console.log(pathname);
   return (
     <>
       <div className="hidden border-r bg-muted/40 md:block w-[240px]">
